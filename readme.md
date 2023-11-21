@@ -15,7 +15,7 @@ to download ffmpeg click on this--> https://ffmpeg.org/download.html
 ## Usage:
 1. conversion-
 To convert a video file to audio, use the converter function provided:
-```bash
+```js
     const conv = require('mediaconv');
 
     // Example usage:
@@ -28,7 +28,7 @@ To convert a video file to audio, use the converter function provided:
 2. playback-
 To play audio or video file use 'play function'.
 
-```bash
+```js
     const conv = require('mediaconv');
 
     // Example usage:
@@ -36,6 +36,25 @@ To play audio or video file use 'play function'.
     //inside play function give filename with extension.
 
 
+```
+
+3. click-
+To click the picture use 'click function'.
+
+```js
+    const conv = require('mediaconv');
+    //conv.click(width,height,time_delay,"image_name")
+
+    conv.click(1000,500,4,"output.jpg");
+
+    //here 1000 refers to the width (x-axis) of the image to be click.
+
+    //here 500 refers to the height (y-axis) of the image.
+
+
+    //4 referes the time delay it means if u call click function image will taken after 4 seconds. for instant click use 0 at the play of 4.
+
+    //"output.jpg" image name.
 ```
 
 ## Acknowledgments:
