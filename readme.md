@@ -57,6 +57,21 @@ To click the picture use 'click function'.
     //"output.jpg" image name.
 ```
 
+4. video-
+To record video use 'video function'.
+
+```js
+     const conv = require('mediaconv');
+
+     //conv.video(delay,"duration of video","filename");
+     conv.video(5,"00:00:4","example.mp4");
+     // video recording will started after 5 seconds after calling video function.
+     //"00:00:4" 4 seconds of video will be recorded.
+     //"example.mp4" video file name.
+
+
+```
+
 ## Acknowledgments:
 
 - This project utilizes the ffmpeg library for audio conversion and playback.
